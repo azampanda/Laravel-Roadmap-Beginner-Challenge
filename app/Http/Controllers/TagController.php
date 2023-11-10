@@ -15,7 +15,7 @@ class TagController extends Controller
 
     public function create()
     {
-        $isUpdate = true;
+        $isUpdate = false;
         $title = __('Create');
 
         return view('tags.form', compact('isUpdate', 'title'));
